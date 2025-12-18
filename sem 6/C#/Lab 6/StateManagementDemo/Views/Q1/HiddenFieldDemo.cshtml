@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Q1 - Hidden Field";
+}
+<h2>Q1 – Hidden Field</h2>
+<form asp-action="HiddenFieldDemo" method="post">
+    <input type="hidden" name="hiddenValue" value="Secret123" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+@if (ViewBag.Result != null)
+{
+    <div class="alert alert-info mt-3">@ViewBag.Result</div>
+}

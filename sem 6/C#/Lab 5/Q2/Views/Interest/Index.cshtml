@@ -1,0 +1,25 @@
+﻿@model Q2.Models.InterestCalculation
+
+@{
+    ViewData["Title"] = "Calculate Simple Interest";
+}
+
+<h2>Simple Interest Calculator</h2>
+<form asp-action="Calculate" method="post">
+    <div class="form-group">
+        <label asp-for="Amount">Principal Amount</label>
+        <input asp-for="Amount" class="form-control" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Rate">Interest Rate (%)</label>
+        <input asp-for="Rate" class="form-control" />
+        <span asp-validation-for="Rate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Time">Time (Years)</label>
+        <input asp-for="Time" class="form-control" />
+        <span asp-validation-for="Time" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Calculate</button>
+</form>

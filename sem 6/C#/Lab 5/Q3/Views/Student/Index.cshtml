@@ -1,0 +1,26 @@
+﻿@model Q3.Models.Student
+
+@{
+    ViewData["Title"] = "Student Information";
+}
+
+<h2>Enter Student Details</h2>
+<form asp-action="Display" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Student Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Course">Course</label>
+        <input asp-for="Course" class="form-control" />
+        <span asp-validation-for="Course" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Semester">Semester</label>
+        <input asp-for="Semester" class="form-control" />
+        <span asp-validation-for="Semester" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Display</button>
+</form>
+<partial name="_ValidationScriptsPartial" />

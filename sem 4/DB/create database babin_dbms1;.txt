@@ -1,0 +1,41 @@
+create database babin_dbms1;
+use babin_dbms1;
+
+CREATE TABLE `babin_dbms1`.`student`(
+`SID` INT NOT NULL,
+`NAME`VARCHAR(45) NULL,
+`GENDER` CHAR NULL,
+`PROGRAM` VARCHAR(45) NULL);
+
+SELECT * FROM student;
+
+ALTER TABLE student ADD COLUMN contactno varchar(20);
+
+ALTER TABLE student MODIFY COLUMN contactno int;
+
+CREATE TABLE `babin_dbms1`.`teacher`(
+`ID` INT NOT NULL,
+`NAME`VARCHAR(45) NULL,
+`ADDRESS` VARCHAR(45) NULL);
+
+SELECT * FROM teacher;
+
+ALTER TABLE TEACHER ADD COLUMN subject varchar(45);
+
+ALTER TABLE TEACHER MODIFY COLUMN ADDRESS INT;
+
+ALTER TABLE student DROP COLUMN gender;
+
+ALTER TABLE teacher DROP COLUMN address;
+
+ALTER TABLE student RENAME COLUMN NAME to STUDENTNAME;
+
+ALTER TABLE teacher RENAME COLUMN name to Studentname;
+
+ALTER TABLE teacher RENAME COLUMN Studentname to name;
+
+ALTER TABLE teacher RENAME COLUMN id to tid;
+
+DROP TABLE teacher;
+
+DROP database babin_dbms1;

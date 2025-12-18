@@ -1,0 +1,71 @@
+create database Babinnorthwind;
+use Babinnorthwind;
+
+
+
+select count(*) from categories;
+select count(*) from customers;
+select count(*) from employees;
+select count(*) from orderdetails;
+select count(*) from orders;
+select count(*) from products;
+select count(*) from shippers;
+select count(*) from suppliers;
+
+SELECT CustomerID AS ID, CustomerName AS Name, ContactName AS Contact FROM customers
+UNION
+SELECT EmployeeID AS ID, FirstName + ' ' + LastName AS Name, '' AS Contact FROM employees;
+
+ SELECT ContactName AS FullName FROM customers
+UNION ALL
+SELECT FirstName + ' ' + LastName AS FullName FROM employees; 
+
+select *from customers where COUNTRY='Mexico' 
+UNION
+select *from customers where COUNTRY='Austria';
+
+ SELECT * FROM customers 
+WHERE Country = 'USA' 
+AND CustomerName NOT IN (SELECT CustomerName FROM customers WHERE Country = 'UK');
+
+CREATE VIEW cust AS 
+SELECT CustomerID, CustomerName, City, Country FROM customers;
+
+CREATE VIEW productinfo AS
+SELECT p.ProductID, p.ProductName, p.Unit, p.Price, 
+       c.CategoryID, c.CategoryName, c.Description, 
+       s.SupplierID, s.SupplierName, s.ContactName, s.Address, s.City, s.PostalCode, s.Country, s.Phone
+FROM products p
+JOIN categories c ON p.CategoryID = c.CategoryID
+JOIN suppliers s ON p.SupplierID = s.SupplierID;
+
+SELECT CategoryName, COUNT(*) AS ProductCount 
+FROM productinfo 
+GROUP BY CategoryName;
+
+SELECT * FROM productinfo 
+WHERE Country IN ('Antigua','Barbuda','Bahamas','Canada'); -- add as much as you want
+
+SELECT * FROM productinfo 
+WHERE Price < (SELECT AVG(Price) FROM productinfo);
+
+CREATE VIEW orderinfo AS
+SELECT o.OrderID, o.OrderDate, c.CustomerName, e.FirstName + ' ' + e.LastName AS EmployeeName, s.ShipperName
+FROM orders o
+JOIN customers c ON o.CustomerID = c.CustomerID
+JOIN employees e ON o.EmployeeID = e.EmployeeID
+JOIN shippers s ON o.ShipperID = s.ShipperID;
+
+SELECT * FROM orderinfo 
+WHERE ShipperName IN ('United Package', 'Swift Shipping');
+
+SELECT * FROM orderinfo 
+WHERE EmployeeName IN ('Janet Leverling', 'Steven Buchanan');
+
+SELECT * FROM orderinfo 
+WHERE OrderDate = '2023-08-18';
+
+SELECT DISTINCT c.Country 
+FROM orders o
+JOIN customers c ON o.CustomerID = c.CustomerID
+WHERE o.OrderDate = '2023-08-19';

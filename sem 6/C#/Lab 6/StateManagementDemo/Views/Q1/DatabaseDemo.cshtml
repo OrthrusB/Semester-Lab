@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Q1 - Database";
+}
+<h2>Q1 – Database (lab6)</h2>
+
+@if (ViewBag.SavedId != null)
+{
+    <div class="alert alert-success">Saved ID: @ViewBag.SavedId</div>
+}
+
+@if (ViewBag.Theme != null)
+{
+    <p><strong>Theme:</strong> @ViewBag.Theme</p>
+    <p><strong>Updated:</strong> @ViewBag.Updated</p>
+}
+
+<hr />
+<a asp-action="DatabaseDemo" class="btn btn-primary">Save</a>
+<a asp-action="LoadFromDb" class="btn btn-info">Load</a>

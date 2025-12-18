@@ -1,0 +1,15 @@
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\Q1.exe.config
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\Q1.exe
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\Q1.pdb
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\EntityFramework.dll
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\EntityFramework.SqlServer.dll
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\EntityFramework.xml
+P:\SemesterLab\sem6\C#\Lab 6\Q1\bin\Debug\EntityFramework.SqlServer.xml
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.csproj.AssemblyReference.cache
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.csproj.CoreCompileInputs.cache
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.csproj.Up2Date
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.exe
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.pdb
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.exe.config
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.Migrations.InitialCreate.resources
+P:\SemesterLab\sem6\C#\Lab 6\Q1\obj\Debug\Q1.csproj.GenerateResource.cache

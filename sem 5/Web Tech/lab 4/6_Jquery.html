@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanishing Divs with jQuery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: opacity 0.5s ease; /* Smooth fade effect */
+        }
+        #div1 { background-color: #ff5733; }
+        #div2 { background-color: #33ff57; }
+        #div3 { background-color: #3357ff; }
+        #div4 { background-color: #ff33a1; }
+    </style>
+</head>
+<body>
+    <div id="div1" class="box">Div 1</div>
+    <div id="div2" class="box">Div 2</div>
+    <div id="div3" class="box">Div 3</div>
+    <div id="div4" class="box">Div 4</div>
+
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // When any div with class 'box' is clicked
+            $('.box').on('click', function() {
+                $(this).fadeOut(500); // Fade out over 500ms
+                // Alternatively, use $(this).hide() for instant vanish
+            });
+        });
+    </script>
+</body>
+</html>

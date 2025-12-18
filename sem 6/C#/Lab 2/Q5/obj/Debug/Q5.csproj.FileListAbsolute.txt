@@ -1,0 +1,8 @@
+P:\SemesterLab\sem6\C#\Lab 2\Q5\bin\Debug\Q5.exe.config
+P:\SemesterLab\sem6\C#\Lab 2\Q5\bin\Debug\Q5.exe
+P:\SemesterLab\sem6\C#\Lab 2\Q5\bin\Debug\Q5.pdb
+P:\SemesterLab\sem6\C#\Lab 2\Q5\obj\Debug\Q5.csproj.AssemblyReference.cache
+P:\SemesterLab\sem6\C#\Lab 2\Q5\obj\Debug\Q5.csproj.CoreCompileInputs.cache
+P:\SemesterLab\sem6\C#\Lab 2\Q5\obj\Debug\Q5.exe
+P:\SemesterLab\sem6\C#\Lab 2\Q5\obj\Debug\Q5.pdb
+P:\SemesterLab\sem6\C#\Lab 2\Q5\obj\Debug\Q5.exe.config

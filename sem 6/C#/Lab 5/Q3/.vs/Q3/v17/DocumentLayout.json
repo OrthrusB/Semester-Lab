@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\migrations\\20250821015146_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:migrations\\20250821015146_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q3\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3376F25D-A28F-4681-8172-1AF8D15A9CC4}|Q3.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250821015146_InitialCreate.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Migrations\\20250821015146_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250821015146_InitialCreate.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Migrations\\20250821015146_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250821015146_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T01:51:46.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Views\\Student\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Details.cshtml",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Views\\Student\\Details.cshtml",
+              "RelativeToolTip": "Views\\Student\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T01:51:02.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T01:48:26.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T01:43:12.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T01:42:00.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-21T01:41:30.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AppDbContext.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\AppDbContext.cs",
+              "RelativeToolTip": "AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T01:40:46.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q3\\Student.cs",
+              "RelativeToolTip": "Student.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T01:40:02.165Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

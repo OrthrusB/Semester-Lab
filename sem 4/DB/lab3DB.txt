@@ -1,0 +1,13 @@
+create database Babinnorthwind;
+use Babinnorthwind;
+
+
+
+select count(*) from categories;
+select count(*) from customers;
+select count(*) from employees;
+select count(*) from orderdetails;
+select count(*) from orders;
+select count(*) from products;
+select count(*) from shippers;
+select count(*) from suppliers;

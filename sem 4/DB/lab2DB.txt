@@ -1,0 +1,46 @@
+create database babin_dbms2;
+use  babin_dbms2;
+
+CREATE TABLE Student (
+    ID INT NOT NULL,
+    name VARCHAR(255),
+    gender VARCHAR(50),
+    program VARCHAR(255),
+    contact_number VARCHAR(50),
+    address VARCHAR(255),
+    UNIQUE(ID)
+);
+
+CREATE TABLE Teacher (
+    ID INT NOT NULL,
+    name VARCHAR(255),
+    subject VARCHAR(255),
+    contact_number VARCHAR(50),
+    address VARCHAR(255),
+    UNIQUE(ID)
+);
+
+ SELECT * FROM student;
+ SELECT * FROM Teacher;
+ 
+ ALTER TABLE Teacher MODIFY contact_number VARCHAR(50) NOT NULL;
+
+ALTER TABLE Student MODIFY address VARCHAR(255) NOT NULL;
+
+ALTER TABLE Teacher ADD PRIMARY KEY (ID);
+
+ALTER TABLE Student ADD PRIMARY KEY (ID);
+
+ALTER TABLE Student
+ALTER COLUMN program SET DEFAULT 'CSIT';
+ 
+ALTER TABLE `babin_dbms2`.`student` 
+CHANGE COLUMN `address` `address` VARCHAR(255) NOT NULL DEFAULT 'Ekantakuna' ;
+
+
+ALTER TABLE `babin_dbms2`.`teacher` 
+DROP PRIMARY KEY;
+
+ 
+
+

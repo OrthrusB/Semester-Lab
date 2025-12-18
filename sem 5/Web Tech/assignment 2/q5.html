@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Div Grid Layout</title>
+    <style>
+        .container {
+            width: 600px;
+            border: 1px solid black;
+        }
+
+        .row {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+
+        .row:last-child {
+            border-bottom: none;
+        }
+
+        .col {
+            border-right: 1px solid black;
+            height: 100px;
+        }
+
+        .col:last-child {
+            border-right: none;
+        }
+
+        /* Fixed widths instead of flex */
+        .row-1 .col:first-child { width: 400px; }
+        .row-1 .col:last-child { width: 200px; }
+
+        .row-2 .col:first-child { width: 200px; }
+        .row-2 .col:last-child { width: 400px; }
+
+        .row-3 .col:nth-child(1) { width: 150px; }
+        .row-3 .col:nth-child(2) { width: 225px; }
+        .row-3 .col:nth-child(3) { width: 225px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row row-1">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-2">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row row-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+</body>
+</html>

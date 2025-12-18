@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q1\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|solutionrelative:migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q1\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q1\\migrations\\202508201320584_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|solutionrelative:migrations\\202508201320584_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|p:\\semesterlab\\sem6\\c#\\lab 6\\q1\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F928DC0-5E39-4D1D-A866-AF4F2693F1D3}|Q1.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "202508201320584_InitialCreate.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Migrations\\202508201320584_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\202508201320584_InitialCreate.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Migrations\\202508201320584_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\202508201320584_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:21:02.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Migrations\\Configuration.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:20:30.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-20T13:14:23.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AppDbContext.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\AppDbContext.cs",
+              "RelativeToolTip": "AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:13:28.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Person.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Person.cs",
+              "RelativeDocumentMoniker": "Person.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Person.cs",
+              "RelativeToolTip": "Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:12:13.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "P:\\SemesterLab\\sem6\\C#\\Lab 6\\Q1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:10:03.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿@model Q2.Models.InterestCalculation
+
+@{
+    ViewData["Title"] = "Calculation Result";
+}
+
+<h2>Simple Interest Result</h2>
+<p>Principal Amount: @Model.Amount</p>
+<p>Interest Rate: @Model.Rate%</p>
+<p>Time: @Model.Time years</p>
+<p>Simple Interest: @Model.SimpleInterest</p>
+<p>Total Amount: @(Model.Amount + Model.SimpleInterest)</p>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

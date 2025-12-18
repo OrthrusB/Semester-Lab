@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce with Google Analytics</title>
+    
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        // Initialize GA4 with parameters
+        gtag('config', 'G-XXXXXXXXXX', {
+            'send_page_view': true,
+            'user_id': 'user_123',
+            'currency': 'USD'
+        });
+    </script>
+    
+    <style>
+        :root{
+            --bg: #f5f7fb;
+            --surface: #ffffff;
+            --muted: #6b7280;
+            --text: #0f1724;
+            --primary: #2563eb; /* pleasant blue */
+            --primary-dark: #1e40af;
+            --success: #16a34a; /* green */
+            --card-border: #e6edf6;
+        }
+
+        body {
+            font-family: Inter, Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .product {
+            background: var(--surface);
+            border: 1px solid var(--card-border);
+            padding: 16px;
+            margin: 12px 0;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(16,24,40,0.04);
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 6px 6px 6px 0;
+            font-weight: 600;
+            transition: background .12s ease, transform .06s ease;
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        button:focus {
+            outline: 3px solid rgba(37,99,235,0.16);
+            outline-offset: 2px;
+        }
+
+        .info {
+            background: #eef6ff;
+            padding: 16px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary);
+            border-radius: 6px;
+            color: var(--text);
+        }
+
+        .purchase-btn{
+            background: var(--success);
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #log{
+            margin-top: 30px;
+            padding: 15px;
+            background: var(--surface);
+            border-radius: 6px;
+            border: 1px solid var(--card-border);
+        }
+
+        #logContent div{
+            padding: 6px 0;
+            border-bottom: 1px solid #f1f5f9;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <h1>E-commerce Analytics Demo</h1>
+    
+    <div class="info">
+        <strong>Analytics Events Tracked:</strong>
+        <ul>
+            <li>Page Views</li>
+            <li>Product Views</li>
+            <li>Add to Cart</li>
+            <li>Purchase</li>
+            <li>User Engagement</li>
+        </ul>
+    </div>
+    
+    <div class="product">
+        <h3>Laptop - $999.99</h3>
+        <button onclick="trackProductView('laptop', 999.99)">View Details</button>
+        <button onclick="trackAddToCart('laptop', 999.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+        <h3>Headphones - $79.99</h3>
+        <button onclick="trackProductView('headphones', 79.99)">View Details</button>
+        <button onclick="trackAddToCart('headphones', 79.99)">Add to Cart</button>
+    </div>
+    
+    <button class="purchase-btn" onclick="trackPurchase()">
+        Complete Purchase
+    </button>
+    
+    <div id="log">
+        <strong>Event Log:</strong>
+        <div id="logContent"></div>
+    </div>
+
+    <script>
+        let cart = [];
+        
+        // Track Product View
+        function trackProductView(productName, price) {
+            gtag('event', 'view_item', {
+                'currency': 'USD',
+                'value': price,
+                'items': [{
+                    'item_id': productName.toLowerCase(),
+                    'item_name': productName,
+                    'price': price,
+                    'quantity': 1
+                }]
+            });
+            
+            log(` Tracked: Product View - ${productName}`);
+        }
+        
+        // Track Add to Cart
+        function trackAddToCart(productName, price) {
+            cart.push({name: productName, price: price});
+            
+            gtag('event', 'add_to_cart', {
+                'currency': 'USD',
+                'value': price,
+                'items': [{
+                    'item_id': productName.toLowerCase(),
+                    'item_name': productName,
+                    'price': price,
+                    'quantity': 1
+                }]
+            });
+            
+            log(` Tracked: Add to Cart - ${productName}`);
+        }
+        
+        // Track Purchase
+        function trackPurchase() {
+            if (cart.length === 0) {
+                alert('Cart is empty!');
+                return;
+            }
+            
+            const total = cart.reduce((sum, item) => sum + item.price, 0);
+            const transactionId = 'TXN' + Date.now();
+            
+            gtag('event', 'purchase', {
+                'transaction_id': transactionId,
+                'value': total,
+                'currency': 'USD',
+                'tax': total * 0.1,
+                'shipping': 10.00,
+                'items': cart.map(item => ({
+                    'item_id': item.name.toLowerCase(),
+                    'item_name': item.name,
+                    'price': item.price,
+                    'quantity': 1
+                }))
+            });
+            
+            log(` Tracked: Purchase - $${total.toFixed(2)} (ID: ${transactionId})`);
+            cart = [];
+        }
+        
+        // Track Custom Event
+        gtag('event', 'page_engagement', {
+            'engagement_time_msec': 1000
+        });
+        
+        // Log function
+        function log(message) {
+            const logDiv = document.getElementById('logContent');
+            const entry = document.createElement('div');
+            entry.textContent = `${new Date().toLocaleTimeString()} - ${message}`;
+            entry.style.padding = '5px';
+            entry.style.borderBottom = '1px solid #ddd';
+            logDiv.appendChild(entry);
+        }
+        
+        log(' Google Analytics initialized');
+    </script>
+</body>
+</html>

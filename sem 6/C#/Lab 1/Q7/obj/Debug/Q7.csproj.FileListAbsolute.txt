@@ -1,0 +1,8 @@
+P:\SemesterLab\sem6\C#\Lab 1\Q7\bin\Debug\Q7.exe.config
+P:\SemesterLab\sem6\C#\Lab 1\Q7\bin\Debug\Q7.exe
+P:\SemesterLab\sem6\C#\Lab 1\Q7\bin\Debug\Q7.pdb
+P:\SemesterLab\sem6\C#\Lab 1\Q7\obj\Debug\Q7.csproj.AssemblyReference.cache
+P:\SemesterLab\sem6\C#\Lab 1\Q7\obj\Debug\Q7.csproj.CoreCompileInputs.cache
+P:\SemesterLab\sem6\C#\Lab 1\Q7\obj\Debug\Q7.exe
+P:\SemesterLab\sem6\C#\Lab 1\Q7\obj\Debug\Q7.pdb
+P:\SemesterLab\sem6\C#\Lab 1\Q7\obj\Debug\Q7.exe.config

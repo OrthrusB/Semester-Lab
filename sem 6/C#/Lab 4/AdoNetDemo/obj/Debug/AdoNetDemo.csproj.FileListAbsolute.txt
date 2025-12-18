@@ -1,0 +1,8 @@
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\bin\Debug\AdoNetDemo.exe.config
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\bin\Debug\AdoNetDemo.exe
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\bin\Debug\AdoNetDemo.pdb
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\obj\Debug\AdoNetDemo.csproj.AssemblyReference.cache
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\obj\Debug\AdoNetDemo.csproj.CoreCompileInputs.cache
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\obj\Debug\AdoNetDemo.exe
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\obj\Debug\AdoNetDemo.pdb
+P:\SemesterLab\sem6\C#\Lab 4\AdoNetDemo\obj\Debug\AdoNetDemo.exe.config

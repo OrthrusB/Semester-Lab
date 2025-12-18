@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Q1 - TempData Result";
+}
+<h2>Q1 – TempData Result</h2>
+@if (TempData["Flash"] != null)
+{
+    <div class="alert alert-success">@TempData["Flash"]</div>
+}
+else
+{
+    <p>No message.</p>
+}
+<a asp-action="TempDataDemo">Try Again</a>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form id="registrationForm" onsubmit="return validateForm(event)">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <span id="nameError" class="error">Name must be at least 3 characters long and contain no numbers.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error">Password must be at least 8 characters, with 1 number, 1 uppercase, 1 lowercase, and 1 special character.</span>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevent form submission for validation
+
+            let isValid = true;
+
+            // Reset error messages
+            document.querySelectorAll('.error').forEach(error => error.style.display = 'none');
+
+            // Full Name Validation
+            const fullName = document.getElementById('fullName').value;
+            const nameRegex = /^[A-Za-z\s]{3,}$/; // Letters and spaces, min 3 chars
+            if (!nameRegex.test(fullName)) {
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+
+            // Email Validation
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+
+            // Password Validation
+            const password = document.getElementById('password').value;
+            const passwordRegex = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[@!#$%^&*])[A-Za-z0-9@!#$%^&*]{8,}$/;
+            if (!passwordRegex.test(password)) {
+                document.getElementById('passwordError').style.display = 'block';
+                isValid = false;
+            }
+
+            // If all validations pass, you can proceed (e.g., submit to a server)
+            if (isValid) {
+                alert('Registration successful!');
+                document.getElementById('registrationForm').reset(); // Clear form
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
